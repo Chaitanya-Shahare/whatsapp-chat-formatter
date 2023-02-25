@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ChatDisplay from './ChatDisplay';
 
 function FileUploader() {
@@ -27,10 +27,13 @@ function FileUploader() {
 		messages.push({ date, time, name, message });
 	}
 
-	// console.log(messages);
+
+	// useEffect(() => {
+	// 	console.log(names);
+	// }, [names])
 
 	return (
-		<div>
+		<div className='w-screen'>
 			<input type="file" onChange={handleFileInputChange} />
 			{fileContent && (
 				<div>
