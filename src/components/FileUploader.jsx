@@ -4,7 +4,7 @@ import ChatDisplay from './ChatDisplay';
 function FileUploader() {
 	const [fileContent, setFileContent] = useState(null);
 
-	function handleFileInputChange(event: any) {
+	function handleFileInputChange(event) {
 		const file = event.target.files[0];
 
 		const reader = new FileReader();

@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-var _ = require('underscore');
 
 const ChatDisplay = ({messages}) => {
 
